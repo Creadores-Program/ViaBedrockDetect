@@ -1,0 +1,5 @@
+name: "ViaLegacyExt"
+version: "0.1.0"
+author: "Creadores Program"
+main: "org.CreadoresProgram.ViaLegacyExt.Main"
+min-version: "3.4.0"
