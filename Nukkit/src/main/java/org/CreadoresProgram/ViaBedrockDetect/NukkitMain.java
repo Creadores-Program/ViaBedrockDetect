@@ -4,7 +4,12 @@ import cn.nukkit.plugin.PluginBase;
 import java.util.List;
 import java.util.ArrayList;
 public class NukkitMain extends PluginBase{
+  private static NukkitMain instance;
+  public static NukkitMain getInstance(){
+    return instance;
+  }
   public void onEnable(){
+    instance = this;
     this.getLogger().info("§aDone!");
   }
   public void onDisable(){
