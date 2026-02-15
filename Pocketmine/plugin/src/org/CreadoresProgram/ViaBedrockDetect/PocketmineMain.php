@@ -4,6 +4,10 @@ namespace org\CreadoresProgram\ViaBedrockDetect;
 use pocketmine\plugin\PluginBase;
 use pocketmine\Player;
 class PocketmineMain extends PluginBase{
+  private static ?self $instance = null;
+  public static function getInstance() : ?self{
+    return self::$instance;
+  }
   public function onEnable() : void{
     $this->getLogger()->info("§aDone!");
   }
