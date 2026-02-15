@@ -2,7 +2,7 @@
 declare(strict_types=1);
 namespace org\CreadoresProgram\ViaBedrockDetect;
 use pocketmine\plugin\PluginBase;
-use pocketmine\Player;
+use pocketmine\player\Player;
 class PocketmineMain extends PluginBase{
   private static ?self $instance = null;
   public static function getInstance() : ?self{
