@@ -4,8 +4,11 @@ namespace org\CreadoresProgram\ViaBedrockDetect;
 use pocketmine\plugin\PluginBase;
 use pocketmine\Player;
 class PocketmineMain extends PluginBase{
-  public function onLoad() : void{
+  public function onEnable() : void{
     $this->getLogger()->info("§aDone!");
+  }
+  public function onDisable() : void{
+    $this->getLogger()->info("§cBye!");
   }
   public function isJavaPlayer(Player $player) : bool{
     $extraData = $player->getNetworkSession()->getPlayerInfo()->getExtraData();
