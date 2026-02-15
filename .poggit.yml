@@ -3,6 +3,6 @@ build-by-default: true
 branches:
 - main
 projects:
-  Pocketmine.plugin:
+  ViaBedrockDetect:
     path: Pocketmine/plugin/
 ...
