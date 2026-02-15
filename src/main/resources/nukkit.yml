@@ -1,0 +1,7 @@
+name: "ViaBedrockDetect"
+version: "0.1.0"
+author: "Creadores Program"
+main: "org.CreadoresProgram.ViaBedrockDetect.NukkitMain"
+api: "1.0.0"
+description: "Detects when a Java player joins your server!"
+website: "https://github.com/Creadores-Program/ViaBedrockDetect"
