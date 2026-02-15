@@ -1,5 +1,5 @@
 name: "ViaBedrockDetect"
 version: "0.1.0"
 author: "Creadores Program"
-main: "org.CreadoresProgram.ViaBedrockDetect.Main"
+main: "org.CreadoresProgram.ViaBedrockDetect.ViaProxyMain"
 min-version: "3.4.0"
