@@ -65,7 +65,7 @@ declare(strict_types=1);
 use org\CreadoresProgram\ViaBedrockDetect\PocketmineMain;
 //...
 //is Java Player?
-PocketmineMain::getInstance()->isJavaPlayer(player);//player = pocketmine\Player returns bool
+PocketmineMain::getInstance()->isJavaPlayer(player);//player = pocketmine\player\Player returns bool
 //get all Java Players
-PocketmineMain::getInstance()->getJavaPlayers(); //returns pocketmine\Player[] array
+PocketmineMain::getInstance()->getJavaPlayers(); //returns pocketmine\player\Player[] array
 ```
