@@ -22,6 +22,7 @@ pom.xml:
   <groupId>org.CreadoresProgram</groupId>
   <artifactId>ViaBedrockDetect</artifactId>
   <version>x.x.x</version><!--replace x.x.x with the plugin version-->
+  <scope>provided</scope>
 </dependency>
 ```
 plugin.yml:
