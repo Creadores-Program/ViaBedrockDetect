@@ -1,5 +1,5 @@
 name: ViaBedrockDetect
-main: org\CreadoresProgram\ViaBedrockDetect\PocketmineMain;
+main: org\CreadoresProgram\ViaBedrockDetect\PocketmineMain
 version: "1.0.0"
 api: 5.0.0
 load: POSTWORLD
