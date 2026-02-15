@@ -4,6 +4,7 @@ import net.raphimc.viaproxy.ViaProxy;
 import net.raphimc.viaproxy.plugins.events.ViaLoadingEvent;
 import net.raphimc.viabedrock.protocol.provider.SkinProvider;
 import com.viaversion.viaversion.api.Via;
+import com.viaversion.viaversion.api.connection.UserConnection;
 import net.lenni0451.lambdaevents.EventHandler;
 import java.util.Map;
 public class ViaProxyMain extends ViaProxyPlugin{
