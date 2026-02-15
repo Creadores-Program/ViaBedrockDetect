@@ -26,6 +26,10 @@
             <id>Lenni0451</id>
             <url>https://maven.lenni0451.net/everything</url>
         </repository>
+        <repository>
+            <id>Jitpack</id>
+            <url>https://jitpack.io</url>
+        </repository>
     </repositories>
 
     <dependencies>
