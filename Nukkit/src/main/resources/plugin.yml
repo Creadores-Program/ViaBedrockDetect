@@ -1,5 +1,5 @@
 name: "ViaBedrockDetect"
-version: "0.1.0"
+version: "1.0.0"
 author: "Creadores Program"
 main: "org.CreadoresProgram.ViaBedrockDetect.NukkitMain"
 api: "1.0.0"
