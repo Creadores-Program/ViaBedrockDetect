@@ -3,6 +3,7 @@ import net.raphimc.viaproxy.plugins.ViaProxyPlugin;
 import net.raphimc.viaproxy.ViaProxy;
 import net.raphimc.viaproxy.plugins.events.ViaLoadingEvent;
 import net.raphimc.viabedrock.protocol.provider.SkinProvider;
+import net.raphimc.viabedrock.protocol.data.enums.bedrock.generated.BuildPlatform;
 import com.viaversion.viaversion.api.Via;
 import com.viaversion.viaversion.api.connection.UserConnection;
 import net.lenni0451.lambdaevents.EventHandler;
@@ -25,7 +26,7 @@ public class ViaProxyMain extends ViaProxyPlugin{
       @Override
       public Map<String, Object> getClientPlayerSkin(final UserConnection user){
         final Map<String, Object> claims = super.getClientPlayerSkin(user);
-        claims.put("DeviceOS", 7);
+        claims.put("DeviceOS", BuildPlatform.UWP.getValue());
         claims.put("DeviceModel", "ViaProxyBedrock");
         return claims;
       }
