@@ -3,6 +3,7 @@ import cn.nukkit.Player;
 import cn.nukkit.plugin.PluginBase;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 public class NukkitMain extends PluginBase{
   private static NukkitMain instance;
   public static NukkitMain getInstance(){
@@ -19,12 +20,6 @@ public class NukkitMain extends PluginBase{
     return player.getLoginChainData().getDeviceModel().equals("ViaProxyBedrock") && player.getLoginChainData().getDeviceOS() == 7;
   }
   public List<Player> getJavaPlayers(){
-    List<Player> javaPlayers = new ArrayList<>();
-    for(Player player : this.getServer().getOnlinePlayers().values()){
-      if(this.isJavaPlayer(player)){
-        javaPlayers.add(player);
-      }
-    }
-    return javaPlayers;
+    return this.getServer().getOnlinePlayers().values().stream().filter(player -> isJavaPlayer(player)).collect(Collectors.toList());
   }
 }
