@@ -3,6 +3,7 @@ import cn.nukkit.Player;
 import cn.nukkit.plugin.PluginBase;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 public class NukkitMain extends PluginBase{
   private static NukkitMain instance;
   public static NukkitMain getInstance(){
