@@ -21,12 +21,6 @@ class PocketmineMain extends PluginBase{
     return ($deviceModel == "ViaProxyBedrock") && ($osId == 7);
   }
   public function getJavaPlayers() : array{
-    $javaPlayers = [];
-    foreach ($this->getServer()->getOnlinePlayers() as $player) {
-      if($this->isJavaPlayer($player)){
-        $javaPlayers[] = $player;
-      }
-    }
-    return $javaPlayers;
+    return array_filter($this->getServer()->getOnlinePlayers(), fn($player) => $this->isJavaPlayer($player));
   }
 }
