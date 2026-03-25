@@ -17,8 +17,7 @@ class PocketmineMain extends PluginBase{
   public function isJavaPlayer(Player $player) : bool{
     $extraData = $player->getNetworkSession()->getPlayerInfo()->getExtraData();
     $deviceModel = $extraData["DeviceModel"] ?? "";
-    $osId = $extraData["DeviceOS"] ?? -1;
-    return ($deviceModel == "ViaProxyBedrock") && ($osId == 7);
+    return ($deviceModel == "ViaProxyBedrock");
   }
   public function getJavaPlayers() : array{
     return array_filter($this->getServer()->getOnlinePlayers(), fn($player) => $this->isJavaPlayer($player));
