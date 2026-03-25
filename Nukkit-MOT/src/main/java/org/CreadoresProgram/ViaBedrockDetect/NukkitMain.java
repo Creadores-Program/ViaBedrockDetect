@@ -17,7 +17,7 @@ public class NukkitMain extends PluginBase{
     this.getLogger().info("§cBye!");
   }
   public boolean isJavaPlayer(Player player){
-    return player.isJavaClient() || (player.getLoginChainData().getDeviceModel().equals("ViaProxyBedrock") && player.getLoginChainData().getDeviceOS() == 7);
+    return player.isJavaClient() || player.getLoginChainData().getDeviceModel().equals("ViaProxyBedrock");
   }
   public List<Player> getJavaPlayers(){
     return this.getServer().getOnlinePlayers().values().stream().filter(player -> isJavaPlayer(player)).collect(Collectors.toList());
