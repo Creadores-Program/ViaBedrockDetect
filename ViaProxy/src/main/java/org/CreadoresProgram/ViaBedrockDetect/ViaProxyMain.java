@@ -10,6 +10,9 @@ import net.lenni0451.lambdaevents.EventHandler;
 import java.util.Map;
 public class ViaProxyMain extends ViaProxyPlugin{
   private String prefix = "[ViaBedrockDetect] ";
+  private String DeviceOs = "DeviceOS";
+  private String DeviceModel = "DeviceModel";
+  private String DeviceModelVal = "ViaProxyBedrock";
   @Override
   public void onEnable(){
     System.out.println(prefix + "Loading ViaBedrockDetect...");
@@ -26,8 +29,8 @@ public class ViaProxyMain extends ViaProxyPlugin{
       @Override
       public Map<String, Object> getClientPlayerSkin(final UserConnection user){
         final Map<String, Object> claims = super.getClientPlayerSkin(user);
-        claims.put("DeviceOS", BuildPlatform.UWP.getValue());
-        claims.put("DeviceModel", "ViaProxyBedrock");
+        claims.put(DeviceOs, BuildPlatform.UWP.getValue());
+        claims.put(DeviceModel, DeviceModelVal);
         return claims;
       }
     });

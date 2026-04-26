@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.stream.Collectors;
 public class NukkitMain extends PluginBase{
   private static NukkitMain instance;
+  private static String deviceModelVP = "ViaProxyBedrock";
   public static NukkitMain getInstance(){
     return instance;
   }
@@ -17,7 +18,7 @@ public class NukkitMain extends PluginBase{
     this.getLogger().info("§cBye!");
   }
   public boolean isJavaPlayer(Player player){
-    return player.getLoginChainData().getDeviceModel().equals("ViaProxyBedrock");
+    return player.getLoginChainData().getDeviceModel().equals(deviceModelVP);
   }
   public List<Player> getJavaPlayers(){
     return this.getServer().getOnlinePlayers().values().stream().filter(player -> isJavaPlayer(player)).collect(Collectors.toList());
